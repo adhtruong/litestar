@@ -42,7 +42,7 @@ install: clean										## Install the project, dependencies, and pre-commit for
 	@if [ "$(VENV_EXISTS)" ]; then echo "=> Removing existing virtual environment"; fi
 	if [ "$(VENV_EXISTS)" ]; then $(MAKE) destroy; fi
 	if [ "$(VENV_EXISTS)" ]; then $(MAKE) clean; fi
-	@if [ "$(USING_PDM)" ]; then $(PDM) config --local venv.in_project true && python3 -m venv --copies .venv && . $(ENV_PREFIX)/activate && $(ENV_PREFIX)/pip install --quiet -U wheel setuptools cython mypy pip; fi
+	@if [ "$(USING_PDM)" ]; then $(PDM) venv --python 3.10 create --force; fi
 	@if [ "$(USING_PDM)" ]; then $(PDM) install -dG:all; fi
 	@echo "=> Install complete! Note: If you want to re-install re-run 'make install'"
 
@@ -51,7 +51,7 @@ clean: 												## Cleanup temporary build artifacts
 	@echo "=> Cleaning working directory"
 	@rm -rf .pytest_cache .ruff_cache .hypothesis build/ -rf dist/ .eggs/
 	@find . -name '*.egg-info' -exec rm -rf {} +
-	@find . -name '*.egg' -exec rm -f {} +
+	@find . -type f -name '*.egg' -exec rm -f {} +
 	@find . -name '*.pyc' -exec rm -f {} +
 	@find . -name '*.pyo' -exec rm -f {} +
 	@find . -name '*~' -exec rm -f {} +
