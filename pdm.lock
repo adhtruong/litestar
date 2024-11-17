@@ -5,7 +5,7 @@
 groups = ["default", "annotated-types", "attrs", "brotli", "cli", "cryptography", "dev", "dev-contrib", "docs", "full", "htmx", "jinja", "jwt", "linting", "mako", "minijinja", "opentelemetry", "piccolo", "picologging", "prometheus", "pydantic", "redis", "sqlalchemy", "standard", "structlog", "test"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:2cd38311988c030078edcb5fc01833716bef010b359e051a25555639d04f7296"
+content_hash = "sha256:764b4c994de5f1f6ed050d7d83ab87bfdfef216c9f50aa19d3762f766febc2a7"
 
 [[metadata.targets]]
 requires_python = "~=3.8"
@@ -1092,16 +1092,16 @@ files = [
 
 [[package]]
 name = "deprecated"
-version = "1.2.14"
-requires_python = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "1.2.15"
+requires_python = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,>=2.7"
 summary = "Python @deprecated decorator to deprecate old python classes, functions or methods."
 groups = ["dev-contrib", "full", "opentelemetry"]
 dependencies = [
     "wrapt<2,>=1.10",
 ]
 files = [
-    {file = "Deprecated-1.2.14-py2.py3-none-any.whl", hash = "sha256:6fac8b097794a90302bdbb17b9b815e732d3c4720583ff1b198499d78470466c"},
-    {file = "Deprecated-1.2.14.tar.gz", hash = "sha256:e5323eb936458dccc2582dc6f9c322c852a775a27065ff2b0c4970b9d53d01b3"},
+    {file = "Deprecated-1.2.15-py2.py3-none-any.whl", hash = "sha256:353bc4a8ac4bfc96800ddab349d89c25dec1079f65fd53acdcc1e0b975b21320"},
+    {file = "deprecated-1.2.15.tar.gz", hash = "sha256:683e561a90de76239796e6b6feac66b99030d2dd3fcf61ef996330f14bbb9b0d"},
 ]
 
 [[package]]
@@ -1240,7 +1240,7 @@ files = [
 
 [[package]]
 name = "faker"
-version = "30.8.2"
+version = "33.0.0"
 requires_python = ">=3.8"
 summary = "Faker is a Python package that generates fake data for you."
 groups = ["default", "htmx"]
@@ -1249,8 +1249,8 @@ dependencies = [
     "typing-extensions",
 ]
 files = [
-    {file = "Faker-30.8.2-py3-none-any.whl", hash = "sha256:4a82b2908cd19f3bba1a4da2060cc4eb18a40410ccdf9350d071d79dc92fe3ce"},
-    {file = "faker-30.8.2.tar.gz", hash = "sha256:aa31b52cdae3673d6a78b4857c7bcdc0e98f201a5cb77d7827fa9e6b5876da94"},
+    {file = "Faker-33.0.0-py3-none-any.whl", hash = "sha256:68e5580cb6b4226710886e595eabc13127149d6e71e9d1db65506a7fbe2c7fce"},
+    {file = "faker-33.0.0.tar.gz", hash = "sha256:9b01019c1ddaf2253ca2308c0472116e993f4ad8fc9905f82fa965e0c6f932e9"},
 ]
 
 [[package]]
@@ -2777,7 +2777,7 @@ files = [
 
 [[package]]
 name = "psycopg-pool"
-version = "3.2.3"
+version = "3.2.4"
 requires_python = ">=3.8"
 summary = "Connection Pool for Psycopg"
 groups = ["dev"]
@@ -2785,8 +2785,8 @@ dependencies = [
     "typing-extensions>=4.6",
 ]
 files = [
-    {file = "psycopg_pool-3.2.3-py3-none-any.whl", hash = "sha256:53bd8e640625e01b2927b2ad96df8ed8e8f91caea4597d45e7673fc7bbb85eb1"},
-    {file = "psycopg_pool-3.2.3.tar.gz", hash = "sha256:bb942f123bef4b7fbe4d55421bd3fb01829903c95c0f33fd42b7e94e5ac9b52a"},
+    {file = "psycopg_pool-3.2.4-py3-none-any.whl", hash = "sha256:f6a22cff0f21f06d72fb2f5cb48c618946777c49385358e0c88d062c59cbd224"},
+    {file = "psycopg_pool-3.2.4.tar.gz", hash = "sha256:61774b5bbf23e8d22bedc7504707135aaf744679f8ef9b3fe29942920746a6ed"},
 ]
 
 [[package]]
@@ -3765,13 +3765,13 @@ files = [
 
 [[package]]
 name = "setuptools"
-version = "75.3.0"
-requires_python = ">=3.8"
+version = "75.5.0"
+requires_python = ">=3.9"
 summary = "Easily download, build, install, upgrade, and uninstall Python packages"
 groups = ["default", "dev", "linting"]
 files = [
-    {file = "setuptools-75.3.0-py3-none-any.whl", hash = "sha256:f2504966861356aa38616760c0f66568e535562374995367b4e69c7143cf6bcd"},
-    {file = "setuptools-75.3.0.tar.gz", hash = "sha256:fba5dd4d766e97be1b1681d98712680ae8f2f26d7881245f2ce9e40714f1a686"},
+    {file = "setuptools-75.5.0-py3-none-any.whl", hash = "sha256:87cb777c3b96d638ca02031192d40390e0ad97737e27b6b4fa831bea86f2f829"},
+    {file = "setuptools-75.5.0.tar.gz", hash = "sha256:5c4ccb41111392671f02bb5f8436dfc5a9a7185e80500531b133f5775c4163ef"},
 ]
 
 [[package]]
@@ -4427,14 +4427,14 @@ files = [
 
 [[package]]
 name = "tomli"
-version = "2.0.2"
+version = "2.1.0"
 requires_python = ">=3.8"
 summary = "A lil' TOML parser"
 groups = ["dev", "full", "linting", "piccolo", "test"]
 marker = "python_version < \"3.11\""
 files = [
-    {file = "tomli-2.0.2-py3-none-any.whl", hash = "sha256:2ebe24485c53d303f690b0ec092806a085f07af5a5aa1464f3931eec36caaa38"},
-    {file = "tomli-2.0.2.tar.gz", hash = "sha256:d46d457a85337051c36524bc5349dd91b1877838e2979ac5ced3e710ed8a60ed"},
+    {file = "tomli-2.1.0-py3-none-any.whl", hash = "sha256:a5c57c3d1c56f5ccdf89f6523458f60ef716e210fc47c4cfb188c5ba473e0391"},
+    {file = "tomli-2.1.0.tar.gz", hash = "sha256:3f646cae2aec94e17d04973e4249548320197cfabdf130015d023de4b74d8ab8"},
 ]
 
 [[package]]
@@ -4689,13 +4689,13 @@ files = [
 
 [[package]]
 name = "types-setuptools"
-version = "75.3.0.20241107"
+version = "75.5.0.20241116"
 requires_python = ">=3.8"
 summary = "Typing stubs for setuptools"
 groups = ["linting"]
 files = [
-    {file = "types-setuptools-75.3.0.20241107.tar.gz", hash = "sha256:f66710e1cd4a936e5fcc12d4e49be1a67c34372cf753e87ebe704426451b4012"},
-    {file = "types_setuptools-75.3.0.20241107-py3-none-any.whl", hash = "sha256:bc6de6e2bcb6d610556304d0a69fe4ca208ac4896162647314ecfd9fd73d8550"},
+    {file = "types-setuptools-75.5.0.20241116.tar.gz", hash = "sha256:b6939ffdbc50ffdc0bcfbf14f7a6de1ddc5510906c1ca2bd62c23646e5798b1a"},
+    {file = "types_setuptools-75.5.0.20241116-py3-none-any.whl", hash = "sha256:1144b2ab8fa986061f963391fdbde16df20582e3cc39c94340e71aa61cc7203f"},
 ]
 
 [[package]]
